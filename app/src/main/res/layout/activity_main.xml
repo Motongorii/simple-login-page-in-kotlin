@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:background="@android:color/holo_green_dark"
+        android:backgroundTint="#21F387"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="217dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/holo_blue_dark"
+        android:backgroundTint="#21F3B8"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="334dp"
+        android:backgroundTint="#AF4C5B"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="#0337F4"
+        android:ems="10"
+        android:hint="SIGN IN"
+        android:inputType="text"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
